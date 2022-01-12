@@ -69,7 +69,7 @@ clockObject.start();
     }
 
     function comicCall(){
-        var apiUrl = "https://cors-anywhere.herokuapp.com/https://xkcd.com/614/info.0.json";
+        var apiUrl = "https://xkcd.com/614/info.0.json";
 
         fetch(apiUrl)
         
