@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    
+    <!-- make sure the GoogleFonts link come before the css link if you want to use fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Staatliches&display=swap" rel="stylesheet">
+     
+    <!-- add the style sheet here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+
+    <!-- regular css link goes last -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <title>Comics and Cocktails</title>
+</head>
+
+<body>
+    <section class="main header">
+        <!-- navigation will have interactive buttons that take you to other parts of the application -->
+        <nav>
+            <h1 class="py-6 is-size-1 has-text-centered has-text-danger"> Welcome to Comics and Cocktails!</h1>
+                  <!--<button type="button" id="comics-and-cocktails">Comics and Cocktails</button>-->
+                <!--<button type="button" id="saved-cocktails">Saved Cocktails</button> -->
+               <nav class="navbar is-danger">
+                   <!-- navbar brand, navbar menu... -->
+                   <div class="navbar-brand">
+                       <a class="navbar-item">
+                           <img src="assets/images/drink.jpg" alt="drink icon">
+                       </a>
+                   </div>
+
+                   <div class="navbar-menu" id="nav-links">
+                       <div class="navbar-start">
+                           <a class="navbar-item">Saved Cocktails</a>
+                           <a class="navbar-item">Saved Comics</a>
+                           <a class="navber-item">Home</a>
+                       </div>
+                   </div>
+                  </nav>
+                </h1>
+        </nav>
+    </header>
+       <main>
+        <!-- divide page into sections -->
+        <button class="button is-warning">
+            Drink of the day!
+           </button>
+
+        <div>
+           
+        </div>     
+
+    </main>
+        <section class="section">
+            <div class="container">
+                <h1 class="title">
+                    <button class="button is-link is-medium is-mobile" id="comics-and-cocktails">Comics and Cocktails</button>
+                    <button class="button is-link is-medium is-mobile" id="saved-cocktails">Saved Cocktails</button>
+                </h1>
+            </div>
+        </section>
+        </nav>
+    </header>
+    
+    <main class="page-content" id="page-content">
+
+        
+        <!-- time -->
+        <div class="clock">
+            <span class="clock-time"></span>
+            <span class="clock-ampm"></span>
+        </div>
+        
+
+        </section>
+
+        <!-- need to get time to show here-->
+        <div class="columns">
+            <div class="column">
+                <section class="time">
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- drinks section -->
+        <div class="columns">
+            <div class="column">
+                <section class="drink-wrapper" id="drink-wrapper">
+
+                    <!-- drink picture-->
+                    <div class="drink-picture" id="drink-picture">Drink Pic
+                        <img id="drink-img" height="500" width="500">
+                        <!-- Javascript will dynamically generate API content here -->
+                    </div>                  
+                </section>
+            </div>
+
+                <!-- drink recipe --> 
+            <div class="column">Drink Recipe              
+                <section class="drink-recipe" id="drink-recipe">
+                    <!-- Javascript will dynamically generate API content here -->
+                </section>
+            </div>
+        </div>
+      
+        <div class="columns">
+            <div class="column">COMIC
+            <section class="comic-wrapper" id="comic-wrapper">
+
+                <!-- comic section-->
+                <div class="comic" id="comic">
+                    <img id="comic-img" height="500" width="500">
+                    <!-- JavaScript will dynamically generate API content here-->
+                </div>
+            </section>
+            </div>
+        </div>    
+    </main><br><br>
+
+    <footer>
+       <h2>
+    </footer>
+
+    <!-- JavaScript link can go inside the body or between /body & /html tags -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
